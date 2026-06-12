@@ -12,7 +12,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false)
   const router = useRouter()
 
-  const INVITE_CODE = 'Katagirilablental'; // 指定された招待コード
+  const INVITE_CODE = 'Katagirilabrental'; // 指定された招待コード
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

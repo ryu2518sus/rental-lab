@@ -92,6 +92,17 @@ export default function LoginPage() {
             {loading ? '処理中...' : mode === 'login' ? 'LOGIN' : 'APPLY FOR ACCESS'}
           </button>
         </form>
+         {/* --- 新規追加：パスワードリセットへのリンク --- */}
+    {mode === 'login' && (
+      <div className="text-center pb-6">
+        <button 
+          onClick={() => window.open('/reset-password', '_blank')} 
+          className="text-[12px] text-slate-400 hover:text-blue-500 underline font-black"
+        >
+          パスワードを忘れた場合はこちら 
+        </button>
+      </div>
+    )}    
         <p className="text-center pb-6 text-[9px] text-slate-300 font-bold uppercase tracking-widest">招待コードによる許可制システム</p>
       </div>
     </div>
